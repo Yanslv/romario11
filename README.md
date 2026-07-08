@@ -20,7 +20,7 @@ npx skills add Yanslv/falabaixinho -g -a cursor -y
 
 ## Usar
 
-No Cursor Agent chat, digite `/falabaixinho`.
+No Cursor Agent chat, digite `/romario11`.
 
 ## Compatibilidade
 
