@@ -14,16 +14,16 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 if (git remote get-url origin 2>$null) {
-    git remote set-url origin https://github.com/Yanslv/falabaixinho.git
+    git remote set-url origin https://github.com/Yanslv/romario11.git
 } else {
-    git remote add origin https://github.com/Yanslv/falabaixinho.git
+    git remote add origin https://github.com/Yanslv/romario11.git
 }
 
 git push -u origin main
 
 Write-Host ''
-Write-Host 'Publicado: https://github.com/Yanslv/falabaixinho'
+Write-Host 'Publicado: https://github.com/Yanslv/romario11'
 Write-Host ''
 Write-Host 'Instalar:'
-Write-Host '  curl -sL skill.sh | sh -s -- Yanslv/falabaixinho -g -a cursor -y'
-Write-Host '  npx skills add Yanslv/falabaixinho -g -a cursor -y'
+Write-Host '  curl -sL skill.sh | sh -s -- Yanslv/romario11 -g -a cursor -y'
+Write-Host '  npx skills add Yanslv/romario11 -g -a cursor -y'

@@ -1,4 +1,4 @@
-# falabaixinho
+# romario11
 
 Cursor Agent Skill com tom **carioca**, direto e provocativo — inspirado no *estilo* de Romario.
 
@@ -9,13 +9,13 @@ Nao e afiliacao oficial. Nao usa citacoes reais de Romario.
 ### skill.sh
 
 ```bash
-curl -sL skill.sh | sh -s -- Yanslv/falabaixinho -g -a cursor -y
+curl -sL skill.sh | sh -s -- Yanslv/romario11 -g -a cursor -y
 ```
 
 ### npx skills
 
 ```bash
-npx skills add Yanslv/falabaixinho -g -a cursor -y
+npx skills add Yanslv/romario11 -g -a cursor -y
 ```
 
 ## Usar
