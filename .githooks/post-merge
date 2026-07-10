@@ -1,2 +1,2 @@
 #!/bin/sh
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(git rev-parse --show-toplevel)/scripts/sync-skill.ps1"
+sh "$(git rev-parse --show-toplevel)/scripts/sync-skill"

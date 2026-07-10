@@ -39,12 +39,12 @@ if ($globalVersion -and $globalVersion -ne $repoVersion) {
 }
 
 if (-not $globalVersion) {
-    Write-Host "AVISO: skill global nao encontrada. Rode: .\scripts\sync-skill.ps1" -ForegroundColor Yellow
+    Write-Host "AVISO: skill global nao encontrada. Rode: .\scripts\sync-skill" -ForegroundColor Yellow
 }
 
 if ($outdated.Count -gt 0) {
     Write-Host "DESATUALIZADA: $($outdated -join ', ')" -ForegroundColor Yellow
-    Write-Host "Rode: .\scripts\sync-skill.ps1" -ForegroundColor Yellow
+    Write-Host "Rode: .\scripts\sync-skill" -ForegroundColor Yellow
     exit 1
 }
 
@@ -53,5 +53,5 @@ if ($repoVersion -eq $projectVersion -and $repoVersion -eq $globalVersion) {
     exit 0
 }
 
-Write-Host "Sincronizacao parcial. Rode: .\scripts\sync-skill.ps1" -ForegroundColor Yellow
+Write-Host "Sincronizacao parcial. Rode: .\scripts\sync-skill" -ForegroundColor Yellow
 exit 1
