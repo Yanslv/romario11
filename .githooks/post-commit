@@ -1,2 +1,0 @@
-#!/bin/sh
-sh "$(git rev-parse --show-toplevel)/scripts/sync-skill" > /dev/null 2>&1

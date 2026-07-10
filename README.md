@@ -49,46 +49,13 @@ No Cursor Agent chat, digite `/romario11` e manda bala.
 
 ## Atualizar
 
-Se você instalou via `npx skills add`, o push no GitHub **não** atualiza a skill local automaticamente.
+A cada `/romario11`, a skill verifica a versão no GitHub. Se estiver desatualizada, o agente avisa:
 
-A skill verifica a versão no GitHub a cada `/romario11`. Se estiver desatualizada, o agente **vai te cobrar** pra atualizar.
+> Coé mermão, cê tá na v2.1.0 e já saiu a v2.2.0. Tá de brincadeira? Mete npx skills update logo.
 
 ```bash
 npx skills update
 ```
-
-Ou reinstale:
-
-```bash
-npx skills add Yanslv/romario11 -g -a cursor -y
-```
-
-### Desenvolvimento local (autor)
-
-O `SKILL.md` na raiz é a fonte única. Scripts sincronizam para o Cursor sem precisar de `npx skills add` a cada mudança.
-
-Os comandos abaixo detectam o SO automaticamente (Windows, Linux ou macOS):
-
-```bash
-# Sincroniza para .cursor/skills/ (projeto) e ~/.cursor/skills/ (global)
-./scripts/sync-skill
-
-# Verifica se alguma cópia está desatualizada
-./scripts/check-skill-version
-
-# Instala hooks git (sync automático após commit e merge)
-./scripts/install-hooks
-```
-
-No PowerShell do Windows, use os atalhos `.ps1` se `./scripts/sync-skill` não rodar:
-
-```powershell
-.\scripts\sync-skill.ps1
-.\scripts\check-skill-version.ps1
-.\scripts\install-hooks.ps1
-```
-
-Com os hooks instalados, cada `git commit` ou `git pull` atualiza a skill no Cursor automaticamente.
 
 ---
 
