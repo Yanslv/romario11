@@ -47,6 +47,39 @@ No Cursor Agent chat, digite `/romario11` e manda bala.
 
 ---
 
+## Atualizar
+
+Se você instalou via `npx skills add`, o push no GitHub **não** atualiza a skill local automaticamente.
+
+```bash
+npx skills update
+```
+
+Ou reinstale:
+
+```bash
+npx skills add Yanslv/romario11 -g -a cursor -y
+```
+
+### Desenvolvimento local (autor)
+
+O `SKILL.md` na raiz é a fonte única. Scripts sincronizam para o Cursor sem precisar de `npx skills add` a cada mudança:
+
+```powershell
+# Sincroniza para .cursor/skills/ (projeto) e ~/.cursor/skills/ (global)
+.\scripts\sync-skill.ps1
+
+# Verifica se alguma cópia está desatualizada
+.\scripts\check-skill-version.ps1
+
+# Instala hooks git (sync automático após commit e merge)
+.\scripts\install-hooks.ps1
+```
+
+Com os hooks instalados, cada `git commit` ou `git pull` atualiza a skill no Cursor automaticamente.
+
+---
+
 ## Exemplos de Resposta
 
 > **Você:** Como centralizo uma div no CSS?
